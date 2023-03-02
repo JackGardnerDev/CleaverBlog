@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cleaver Dev Django">
+  <meta name="author" content="Jack Gardner">
+  <title>Cleaver Blog - Django</title>
+  <link rel="icon" type="image/x-icon" href="/./img/favicon.png">
+  <link rel="stylesheet" href="/./assets/css/style.css">
+  <link rel="stylesheet" href="/./assets/css/sidebars.css">
+  <link rel="stylesheet" href="/./assets/css/navbars.css">
+  <link rel="stylesheet" href="/./assets/css/heroes.css">
+  <link rel="stylesheet" href="/./assets/css/bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sidebars/">
+  <!-- below link may be useless -->
+  <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cheatsheet/">
+
+</head>
+<body>
+
+<!-- top navigation bar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <a class="navbar-brand text-info" href="django.html">Django</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <!-- "mr-auto" for left align -->
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link text-info" href="/./index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-info" data-bs-toggle="dropdown" href="/./languages.html" role="button" aria-expanded="false">Languages</a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <!-- dropdown-item active - for highlight -->
+            <li><a class="dropdown-item" href="/./languages/html/html.html">&nbsp;&nbsp;HTML&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./languages/css/css.html">&nbsp;&nbsp;CSS&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./languages/javascript/javascript.html">&nbsp;&nbsp;JavaScript&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./languages/php/php.html">&nbsp;&nbsp;PHP&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./languages/sql/sql.html">&nbsp;&nbsp;SQL&nbsp;&nbsp;</a></li>
+            <!-- use this to divide sections -->
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/./languages/java/java.html">&nbsp;&nbsp;Java&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./languages/python/python.html">&nbsp;&nbsp;Python&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./languages/ruby/ruby.html">&nbsp;&nbsp;Ruby&nbsp;&nbsp;</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-info" data-bs-toggle="dropdown" href="/./frameworks.html" role="button" aria-expanded="false">Frameworks</a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class="dropdown-item" href="/./frameworks/bootstrap/bootstrap.html">&nbsp;&nbsp;Bootstrap&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./frameworks/django/django.html"><span class="border-start border-4 rounded-1 border-info">&nbsp;Django</span>&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./frameworks/jquery/jquery.html">&nbsp;&nbsp;jQuery&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./frameworks/nodejs/nodejs.html">&nbsp;&nbsp;NodeJS&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./frameworks/react/react.html">&nbsp;&nbsp;React&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./frameworks/typescript/typescript.html">&nbsp;&nbsp;TypeScript&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./frameworks/w3.css/w3.css.html">&nbsp;&nbsp;W3.CSS&nbsp;&nbsp;</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-info" data-bs-toggle="dropdown" href="/./topics.html" role="button" aria-expanded="false">Topics</a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a class="dropdown-item" href="/./topics/cyber-security/cyber-security.html">&nbsp;&nbsp;Cyber Security&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./topics/data-science/data-science.html">&nbsp;&nbsp;Data Science&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./topics/databases/databases.html">&nbsp;&nbsp;Databases&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./topics/design/design.html">&nbsp;&nbsp;Design&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./topics/digital-businesses/digital-businesses.html">&nbsp;&nbsp;Digital Businesses&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./topics/information-systems/information-systems.html">&nbsp;&nbsp;Information Systems&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./topics/information-technology/information-technology.html">&nbsp;&nbsp;Information Technology&nbsp;&nbsp;</a></li>
+            <li><a class="dropdown-item" href="/./topics/web-dev/web-dev.html">&nbsp;&nbsp;Website Development&nbsp;&nbsp;</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-info" href="/./about.html">About</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+
+<!-- left navigation sidebar -->
+
+<!-- the fixed top is wanted, but its fixing into nav bar - add fixed top to div class "fixed-top", "stick-top" to stay top under -->
+<div class="flex-shrink-0 p-3 bg-dark text-info fixed-top" style="width: 280px;">
+    <a href="/./index.html" class="d-flex align-items-center pb-3 mb-3 link-info text-decoration-none">
+      <img src="/./img/favicon.png" alt="Cleaver Dev Icon" style="width:30px;height:30px;">
+      <span class="fs-5 fw-semibold">&nbsp;Cleaver Blog</span>
+    </a>
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-info" data-bs-toggle="collapse" data-bs-target="#frameworks-collapse" aria-expanded="false">
+          <a href="/./frameworks.html" class="link-info text-decoration-none">Frameworks</a>
+        </button>
+        <div class="collapse show" id="frameworks-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="/./frameworks/bootstrap/bootstrap.html" class="link-info d-inline-flex text-decoration-none rounded">&nbsp;&nbsp;Bootstrap&nbsp;&nbsp;</a></li>
+            <li><a href="/./frameworks/django/django.html" class="link-info d-inline-flex text-decoration-none rounded"><span class="border-start border-4 rounded-1 border-info">&nbsp;Django</span>&nbsp;&nbsp;</a></li>
+            <li><a href="/./frameworks/jquery/jquery.html" class="link-info d-inline-flex text-decoration-none rounded">&nbsp;&nbsp;jQuery&nbsp;&nbsp;</a></li>
+            <li><a href="/./frameworks/nodejs/nodejs.html" class="link-info d-inline-flex text-decoration-none rounded">&nbsp;&nbsp;NodeJS&nbsp;&nbsp;</a></li>
+            <li><a href="/./frameworks/react/react.html" class="link-info d-inline-flex text-decoration-none rounded">&nbsp;&nbsp;React&nbsp;&nbsp;</a></li>
+            <li><a href="/./frameworks/typescript/typescript.html" class="link-info d-inline-flex text-decoration-none rounded">&nbsp;&nbsp;TypeScript&nbsp;&nbsp;</a></li>
+            <li><a href="/./frameworks/w3.css/w3.css.html" class="link-info d-inline-flex text-decoration-none rounded">&nbsp;&nbsp;W3.CSS&nbsp;&nbsp;</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+</div>
+
+<!-- right navigation sidebar -->
+
+<div class="flex-shrink-0 p-3 bg-dark text-info fixed-top ms-auto" style="width: 280px;">
+  
+  <br><br>
+
+  <ul class="list-unstyled ps-0">
+
+    <li class="nav-item">
+      <a href="#top" class="nav-link active" aria-current="page">
+        Top
+      </a>
+    </li>
+
+    <li class="border-top my-1"></li>
+
+    <li class="nav-item">
+      <a href="#introduction" class="nav-link active" aria-current="page">
+        Introduction
+      </a>
+    </li>
+
+    <li class="border-top my-1"></li>
+
+    <li class="nav-item">
+      <a href="#bottom" class="nav-link active" aria-current="page">
+        Bottom
+      </a>
+    </li>
+
+  </ul>
+</div>
+
+<!-- Content -->
+
+<!-- Header -->
+
+<div id="top" class="bg-dark text-secondary px-4 pt-5 text-center">
+  <div class="py-5">
+    <h1 class="display-5 fw-bold text-white">Django</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="fs-5 mb-4">Django - Back End Web Development | Python Framework</p>
+    </div>
+  </div>
+</div>
+
+<!-- Intro -->
+
+<div id="introduction" class="bg-dark text-secondary container py-0">
+  <div class="p-5 mb-4 bg-dark rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Introduction</h1><br>
+      <p class="fs-5 mb-4 text-light">Django</p>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+
+<div class="container">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/./index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <img src="/./img/favicon.png" alt="Cleaver Dev Icon" style="width:30px;height:30px;">
+      </a>
+      <p class="text-muted">&copy; 2023</p>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Main</h5><br>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/./index.html" class="nav-link p-0 text-muted">Home</a></li>
+        <li class="nav-item mb-2"><a href="/./languages.html" class="nav-link p-0 text-muted">Languages</a></li>
+        <li class="nav-item mb-2"><a href="/./frameworks.html" class="nav-link p-0 text-muted">Frameworks</a></li>
+        <li class="nav-item mb-2"><a href="/./topics.html" class="nav-link p-0 text-muted">Topics</a></li>
+        <li class="nav-item mb-2"><a href="/./about.html" class="nav-link p-0 text-muted">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Languages</h5><br>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/./languages/html/html.html" class="nav-link p-0 text-muted">HTML</a></li>
+        <li class="nav-item mb-2"><a href="/./languages/css/css.html" class="nav-link p-0 text-muted">CSS</a></li>
+        <li class="nav-item mb-2"><a href="/./languages/javascript/javascript.html" class="nav-link p-0 text-muted">JavaScript</a></li>
+        <li class="nav-item mb-2"><a href="/./languages/php/php.html" class="nav-link p-0 text-muted">PHP</a></li>
+        <li class="nav-item mb-2"><a href="/./languages/sql/sql.html" class="nav-link p-0 text-muted">SQL</a></li>
+        <br>
+        <li class="nav-item mb-2"><a href="/./languages/java/java.html" class="nav-link p-0 text-muted">Java</a></li>
+        <li class="nav-item mb-2"><a href="/./languages/python/python.html" class="nav-link p-0 text-muted">Python</a></li>
+        <li class="nav-item mb-2"><a href="/./languages/ruby/ruby.html" class="nav-link p-0 text-muted">Ruby</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Frameworks</h5><br>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/./frameworks/bootstrap/bootstrap.html" class="nav-link p-0 text-muted">Bootstrap</a></li>
+        <li class="nav-item mb-2"><a href="/./frameworks/django/django.html" class="nav-link p-0 text-muted">Django</a></li>
+        <li class="nav-item mb-2"><a href="/./frameworks/jquery/jquery.html" class="nav-link p-0 text-muted">jQuery</a></li>
+        <li class="nav-item mb-2"><a href="/./frameworks/nodejs/nodejs.html" class="nav-link p-0 text-muted">NodeJS</a></li>
+        <li class="nav-item mb-2"><a href="/./frameworks/react/react.html" class="nav-link p-0 text-muted">React</a></li>
+        <li class="nav-item mb-2"><a href="/./frameworks/typescript/typescript.html" class="nav-link p-0 text-muted">TypeScript</a></li>
+        <li class="nav-item mb-2"><a href="/./frameworks/w3.css/w3.css.html" class="nav-link p-0 text-muted">W3.CSS</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Topics</h5><br>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/./topics/cyber-security/cyber-security.html" class="nav-link p-0 text-muted">Cyber Security</a></li>
+        <li class="nav-item mb-2"><a href="/./topics/databases/databases.html" class="nav-link p-0 text-muted">Databases</a></li>
+        <li class="nav-item mb-2"><a href="/./topics/data-science/data-science.html" class="nav-link p-0 text-muted">Data Science</a></li>
+        <li class="nav-item mb-2"><a href="/./topics/design/design.html" class="nav-link p-0 text-muted">Design</a></li>
+        <li class="nav-item mb-2"><a href="/./topics/digital-businesses/digital-businesses.html" class="nav-link p-0 text-muted">Digital Businesses</a></li>
+        <li class="nav-item mb-2"><a href="/./topics/information-systems/information-systems.html" class="nav-link p-0 text-muted">Information Systems</a></li>
+        <li class="nav-item mb-2"><a href="/./topics/information-technology/information-technology.html" class="nav-link p-0 text-muted">Information Technology</a></li>
+        <li class="nav-item mb-2"><a href="/./topics/web-dev/web-dev.html" class="nav-link p-0 text-muted">Website Development</a></li>
+      </ul>
+    </div>
+
+  </footer>
+</div>
+
+</body>
+</html>
