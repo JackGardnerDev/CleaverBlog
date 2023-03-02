@@ -1,2 +1,2 @@
 # CleaverBlog
-Bootstrap powered Blog project
+Bootstrap powered blog project
